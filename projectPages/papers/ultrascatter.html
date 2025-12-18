@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>UltraScatter</title>
+
+  <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header / Sidebar ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../../assets/data/images/farid.png" onerror="this.onerror=null;this.src='../../assets/data/images/avatar.jpg';" alt="Mohammad Farid Azampour" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="../../index.html">Mohammad Farid Azampour</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:mf.azampour@tum.de" class="email"><i class="bi bi-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/mfazampour" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/mfazampour" class="github"><i class="bi bi-github"></i></a>
+          <a href="https://scholar.google.com/citations?user=jbpQlOIAAAAJ&hl=de" class="scholar" aria-label="Google Scholar">
+            <svg style="margin-bottom:-10px;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 100 512 512" width="32px" height="32px" fill="#000000"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path fill="#ffffff" d="M213 111l-107 94h69c5 45 41 64 78 67-7 18-4 27 7 39-43 1-103 26-103 67 4 45 63 54 92 54 38 1 81-19 90-54 4-35-10-54-31-71-23-18-28-28-21-40 15-17 35-27 39-51 2-17-2-28-6-43l45-38-1 16c-3 2-5 6-5 9v103c2 13 22 11 23 0V160c0-3-2-7-5-8v-25l16-16zm58 141c-61 10-87-87-38-99 56-11 83 86 38 99zm-5 73c60 13 61 63 10 78-44 9-82-4-81-30 0-25 35-48 71-48z"></path></g></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="../../index.html#about" class="nav-link scrollto"><i class="bi bi-person-vcard"></i> <span>About</span></a></li>
+          <li><a href="../../index.html#publications" class="nav-link scrollto"><i class="bi bi-file-earmark"></i> <span>Publications</span></a></li>
+          <li><a href="../../index.html#workexperience" class="nav-link scrollto"><i class="bi bi-building"></i> <span>Experience</span></a></li>
+          <li><a href="../../index.html#education" class="nav-link scrollto"><i class="bi bi-mortarboard"></i> <span>Education</span></a></li>
+          <li><a href="../../index.html#contact" class="nav-link scrollto"><i class="bi bi-envelope-at"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <section class="inner-page">
+      <div class="container py-5">
+    <div class="mb-4">
+      <a href="../../index.html#publications" class="text-decoration-none"><i class="bi bi-arrow-left"></i> Back to Publications</a>
+    </div>
+
+    <h1 class="mb-2">UltraScatter: Ray-Based Simulation of Ultrasound Scattering</h1>
+    <p class="mb-1"><strong>Felix Dülmer</strong>, Mohammad Farid Azampour, Nassir Navab</p>
+    <p class="text-muted">Presented at IEEE IUS 2025 (Utrecht, Netherlands) · arXiv:2510.10612</p>
+
+    <div class="links mb-4">
+      <a class="project-button" href="https://arxiv.org/abs/2510.10612">arXiv</a>
+      <a class="pdf-button" href="https://ieeexplore.ieee.org/abstract/document/11201820">Publisher (IEEE Xplore)</a>
+      <a class="pdf-button" href="../../assets/data/posters/IUS_2025_Poster.pdf">Poster</a>
+    </div>
+
+    <h2 class="h4">Abstract</h2>
+    <p>
+      Traditional ultrasound simulation methods solve wave equations numerically, achieving high accuracy but at substantial computational cost. 
+      Faster alternatives based on convolution with precomputed impulse responses remain relatively slow, often requiring several minutes to generate a full B-mode image. We introduce UltraScatter, a probabilistic ray tracing framework that models ultrasound scattering efficiently and realistically. Tissue is represented as a volumetric field of scattering probability and scattering amplitude, and ray interactions are simulated via free-flight delta tracking. Scattered rays are traced to the transducer, with phase information incorporated through a linear time-of-flight model. Integrated with plane-wave imaging and beamforming, our parallelized ray tracing architecture produces B-mode images within seconds. Validation with phantom data shows realistic speckle and inclusion patterns, positioning UltraScatter as a scalable alternative to wave-based methods.
+    </p>
+
+    <hr class="my-4">
+
+    <h2 class="h4">Overview</h2>
+    <p>
+      Below are a few figures from UltraScatter. For the paper, see <a href="https://arxiv.org/abs/2510.10612">arXiv</a>.
+    </p>
+
+    <div class="mb-4">
+      <h3 class="h5">Method pipeline</h3>
+      <p class="mb-2">
+        Tissue is represented as volumetric scattering probability/amplitude fields. Ray interactions are sampled via free-flight delta tracking,
+        and scattered rays are traced back to the transducer with phase/time-of-flight modeling.
+      </p>
+      <a href="../../assets/data/ultra_scatter/pipeline_ultra_scatter.png" data-gallery="ultrascatter-gallery" class="portfolio-lightbox">
+        <img src="../../assets/data/ultra_scatter/pipeline_ultra_scatter.png" class="img-fluid rounded shadow-sm" alt="UltraScatter pipeline figure" loading="lazy" decoding="async">
+      </a>
+    </div>
+
+    <div class="mb-4">
+      <h3 class="h5">Results</h3>
+      <p class="mb-2">
+        UltraScatter produces realistic speckle and inclusion patterns and integrates naturally with plane-wave imaging and beamforming.
+      </p>
+      <a href="../../assets/data/ultra_scatter/results_ultra_scatter.png" data-gallery="ultrascatter-gallery" class="portfolio-lightbox">
+        <img src="../../assets/data/ultra_scatter/results_ultra_scatter.png" class="img-fluid rounded shadow-sm" alt="UltraScatter results figure" loading="lazy" decoding="async">
+      </a>
+    </div>
+
+    <hr class="my-4">
+
+    <h2 class="h4">Citation</h2>
+    <p class="mb-2">If you find this work useful, please cite:</p>
+    <pre class="bg-light p-3 rounded border"><code>@article{duelmer2025ultrascatter,
+      title={UltraScatter: Ray-Based Simulation of Ultrasound Scattering},
+      author={Duelmer, Felix and Azampour, Mohammad Farid and Navab, Nassir},
+      booktitle={2025 IEEE International Ultrasonics Symposium (IUS)},
+      pages={1--4},
+      year={2025},
+      organization={IEEE}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script defer src="../../assets/vendor/aos/aos.js"></script>
+  <script defer src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script defer src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script defer src="../../assets/vendor/typed.js/typed.min.js"></script>
+  <script defer src="../../assets/js/main.js"></script>
+</body>
+</html>
+
+

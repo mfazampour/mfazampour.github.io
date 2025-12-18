@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PHOCUS</title>
+
+  <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header / Sidebar ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../../assets/data/images/farid.png" onerror="this.onerror=null;this.src='../../assets/data/images/avatar.jpg';" alt="Mohammad Farid Azampour" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="../../index.html">Mohammad Farid Azampour</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:mf.azampour@tum.de" class="email"><i class="bi bi-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/mfazampour" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/mfazampour" class="github"><i class="bi bi-github"></i></a>
+          <a href="https://scholar.google.com/citations?user=jbpQlOIAAAAJ&hl=de" class="scholar" aria-label="Google Scholar">
+            <svg style="margin-bottom:-10px;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 100 512 512" width="32px" height="32px" fill="#000000"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path fill="#ffffff" d="M213 111l-107 94h69c5 45 41 64 78 67-7 18-4 27 7 39-43 1-103 26-103 67 4 45 63 54 92 54 38 1 81-19 90-54 4-35-10-54-31-71-23-18-28-28-21-40 15-17 35-27 39-51 2-17-2-28-6-43l45-38-1 16c-3 2-5 6-5 9v103c2 13 22 11 23 0V160c0-3-2-7-5-8v-25l16-16zm58 141c-61 10-87-87-38-99 56-11 83 86 38 99zm-5 73c60 13 61 63 10 78-44 9-82-4-81-30 0-25 35-48 71-48z"></path></g></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="../../index.html#about" class="nav-link scrollto"><i class="bi bi-person-vcard"></i> <span>About</span></a></li>
+          <li><a href="../../index.html#publications" class="nav-link scrollto"><i class="bi bi-file-earmark"></i> <span>Publications</span></a></li>
+          <li><a href="../../index.html#workexperience" class="nav-link scrollto"><i class="bi bi-building"></i> <span>Experience</span></a></li>
+          <li><a href="../../index.html#education" class="nav-link scrollto"><i class="bi bi-mortarboard"></i> <span>Education</span></a></li>
+          <li><a href="../../index.html#contact" class="nav-link scrollto"><i class="bi bi-envelope-at"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <section class="inner-page">
+      <div class="container py-5">
+    <div class="mb-4">
+      <a href="../../index.html#publications" class="text-decoration-none"><i class="bi bi-arrow-left"></i> Back to Publications</a>
+    </div>
+
+    <h1 class="mb-2">PHOCUS: Physics-Based Deconvolution for Ultrasound Resolution Enhancement</h1>
+    <p class="mb-1"><strong>Felix Dülmer</strong>, Walter Simson, Mohammad Farid Azampour, Magdalena Wysocki, Angelos Karlas, Nassir Navab</p>
+    <p class="text-muted">ASMUS 2024 (LNCS) · arXiv:2408.03657</p>
+
+    <div class="links mb-4">
+      <a class="project-button" href="https://arxiv.org/abs/2408.03657">arXiv</a>
+      <a class="pdf-button" href="../../assets/data/posters/MICCAI_2024_PHOCUS_Poster.pdf">Poster (PDF)</a>
+      <a class="pdf-button" href="../../assets/data/presentations/MICCAI_2024_PHOCUS_presentation.pdf">Slides (PDF)</a>
+      <a class="code-button" href="https://github.com/Felixduelmer/phocus">Code (GitHub)</a>
+      <a class="pdf-button" href="https://link.springer.com/chapter/10.1007/978-3-031-73647-6_4">Publisher (Springer)</a>
+    </div>
+
+    <h2 class="h4">Abstract</h2>
+    <p>
+      Ultrasound is widely used in medical diagnostics allowing for accessible and powerful imaging but suffers from resolution limitations due to diffraction and the finite aperture of the imaging system, which restricts diagnostic use. The impulse function of an ultrasound imaging system is called the point spread function (PSF), which is convolved with the spatial distribution of reflectors in the image formation process. Recovering high-resolution reflector distributions by removing image distortions induced by the convolution process improves image clarity and detail. Conventionally, deconvolution techniques attempt to rectify the imaging system’s dependent PSF, working directly on the radio-frequency (RF) data. However, RF data is often not readily accessible. Therefore, we introduce a physics-based deconvolution process using a modeled PSF, working directly on the more commonly available B-mode images. By leveraging Implicit Neural Representations (INRs), we learn a continuous mapping from spatial locations to their respective echogenicity values, effectively compensating for the discretized image space. Our contribution consists of a novel methodology for retrieving a continuous echogenicity map directly from a B-mode image through a differentiable physics-based rendering pipeline for ultrasound resolution enhancement. We qualitatively and quantitatively evaluate our approach on synthetic data, demonstrating improvements over traditional methods in metrics such as PSNR and SSIM. Furthermore, we show qualitative enhancements on an ultrasound phantom and an in-vivo acquisition of a carotid artery.
+    </p>
+
+    <hr class="my-4">
+
+    <h2 class="h4">Slides</h2>
+    <p class="text-muted mb-2">Scroll inside the viewer to browse the MICCAI 2024 presentation.</p>
+    <div class="ratio ratio-16x9">
+      <iframe
+        src="../../assets/data/presentations/MICCAI_2024_PHOCUS_presentation.pdf"
+        title="PHOCUS — MICCAI 2024 presentation slides"
+        loading="lazy">
+      </iframe>
+    </div>
+    <p class="text-muted mt-2 mb-0"><small>If the embedded viewer does not load in your browser, use the <a href="../../assets/data/presentations/MICCAI_2024_PHOCUS_presentation.pdf">direct PDF link</a>.</small></p>
+
+    <hr class="my-4">
+
+    <h2 class="h4">Citation</h2>
+    <p class="mb-2">If you find this work useful, please cite:</p>
+    <pre class="bg-light p-3 rounded border"><code>@inproceedings{duelmer2024phocus,
+  title={Phocus: Physics-based deconvolution for ultrasound resolution enhancement},
+  author={Duelmer, Felix and Simson, Walter and Azampour, Mohammad Farid and Wysocki, Magdalena and Karlas, Angelos and Navab, Nassir},
+  booktitle={International Workshop on Advances in Simplifying Medical Ultrasound},
+  pages={35--44},
+  year={2024},
+  organization={Springer}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script defer src="../../assets/vendor/aos/aos.js"></script>
+  <script defer src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script defer src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script defer src="../../assets/vendor/typed.js/typed.min.js"></script>
+  <script defer src="../../assets/js/main.js"></script>
+</body>
+</html>
+
+
