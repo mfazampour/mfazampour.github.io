@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>LOTUS</title>
+
+  <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header / Sidebar ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../../assets/data/images/farid.png" onerror="this.onerror=null;this.src='../../assets/data/images/avatar.jpg';" alt="Mohammad Farid Azampour" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="../../index.html">Mohammad Farid Azampour</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:mf.azampour@tum.de" class="email"><i class="bi bi-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/mfazampour" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/mfazampour" class="github"><i class="bi bi-github"></i></a>
+          <a href="https://scholar.google.com/citations?user=jbpQlOIAAAAJ&hl=de" class="scholar" aria-label="Google Scholar">
+            <svg style="margin-bottom:-10px;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 100 512 512" width="32px" height="32px" fill="#000000"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path fill="#ffffff" d="M213 111l-107 94h69c5 45 41 64 78 67-7 18-4 27 7 39-43 1-103 26-103 67 4 45 63 54 92 54 38 1 81-19 90-54 4-35-10-54-31-71-23-18-28-28-21-40 15-17 35-27 39-51 2-17-2-28-6-43l45-38-1 16c-3 2-5 6-5 9v103c2 13 22 11 23 0V160c0-3-2-7-5-8v-25l16-16zm58 141c-61 10-87-87-38-99 56-11 83 86 38 99zm-5 73c60 13 61 63 10 78-44 9-82-4-81-30 0-25 35-48 71-48z"></path></g></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="../../index.html#about" class="nav-link scrollto"><i class="bi bi-person-vcard"></i> <span>About</span></a></li>
+          <li><a href="../../index.html#publications" class="nav-link scrollto"><i class="bi bi-file-earmark"></i> <span>Publications</span></a></li>
+          <li><a href="../../index.html#workexperience" class="nav-link scrollto"><i class="bi bi-building"></i> <span>Experience</span></a></li>
+          <li><a href="../../index.html#education" class="nav-link scrollto"><i class="bi bi-mortarboard"></i> <span>Education</span></a></li>
+          <li><a href="../../index.html#contact" class="nav-link scrollto"><i class="bi bi-envelope-at"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <section class="inner-page">
+      <div class="container py-5">
+        <div class="mb-4">
+          <a href="../../index.html#publications" class="text-decoration-none"><i class="bi bi-arrow-left"></i> Back to Publications</a>
+        </div>
+
+        <h1 class="mb-2">LOTUS: Learning to Optimize Task-based US representations</h1>
+        <p class="mb-1">Yordanka Velikova, <strong>Mohammad Farid Azampour</strong>, Walter Simson, Vanessa Gonzalez Duque, Nassir Navab</p>
+        <p class="text-muted mb-3">MICCAI 2023 (Oral Presentation)</p>
+
+        <div class="links mb-4">
+          <a class="project-button" href="https://arxiv.org/abs/2307.16021">arXiv</a>
+          <a class="code-button" href="https://github.com/danivelikova/lotus">Code (GitHub)</a>
+          <a class="pdf-button" href="https://www.youtube.com/watch?v=Esx3uf0XFIU">Video</a>
+        </div>
+
+        <img src="../../assets/data/lotus/lotus_animation_bright.gif" class="img-fluid rounded shadow-sm mb-4" alt="LOTUS animation teaser">
+
+        <h2 class="h4">Abstract</h2>
+        <p>
+          Anatomical segmentation in ultrasound is critical for diagnosis and monitoring, but obtaining accurate pixel-wise annotations is both challenging
+          and time consuming. LOTUS tackles this by learning intermediate ultrasound representations that are optimized directly for downstream tasks.
+          Using annotated CT label maps as a simulation medium, we cast ultrasound propagation with a differentiable ray tracer, while simultaneously
+          training segmentation and unsupervised domain adaptation networks. The renderer refines tissue parameters end-to-end, yielding optimized
+          ultrasound simulations that better highlight target anatomy and generalize to real scans.
+        </p>
+
+        <hr class="my-4">
+
+        <h2 class="h4">Presentation</h2>
+        <p class="text-muted">MICCAI 2023 oral presentation recording.</p>
+        <div class="ratio ratio-16x9 mb-4">
+          <iframe
+            src="https://www.youtube.com/embed/Esx3uf0XFIU"
+            title="LOTUS presentation"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+
+        <hr class="my-4">
+
+        <h2 class="h4">Differentiable ultrasound renderer</h2>
+        <figure class="figure">
+          <img src="../../assets/data/lotus/diff_renderer_pipeline.png" class="figure-img img-fluid rounded shadow-sm" alt="LOTUS differentiable renderer pipeline">
+          <figcaption class="figure-caption small">
+            Ray-based renderer assigns ultrasound-specific parameters per tissue label to synthesize attenuation, reflection, and scatter maps.
+          </figcaption>
+        </figure>
+
+        <hr class="my-4">
+
+        <h2 class="h4">Optimized image representations</h2>
+        <div class="ratio ratio-4x3 mb-3">
+          <video class="w-100 h-100 rounded shadow-sm" controls loop muted playsinline poster="../../assets/data/lotus/lotus_opening_animation.gif">
+            <source src="../../assets/data/lotus/lotus_opening_animation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="text-muted">
+          LOTUS iteratively updates renderer parameters per organ-specific task, enhancing contrast for the targeted anatomy while damping distractors.
+        </p>
+
+        <hr class="my-4">
+
+        <h2 class="h4">End-to-end pipeline</h2>
+        <figure class="figure">
+          <img src="../../assets/data/lotus/overview.png" class="figure-img img-fluid rounded shadow-sm" alt="LOTUS end-to-end training pipeline">
+          <figcaption class="figure-caption small">
+            Differentiable rendering, domain adaptation, and segmentation training occur jointly to bridge the gap between simulated and real ultrasound.
+          </figcaption>
+        </figure>
+
+        <hr class="my-4">
+
+        <h2 class="h4">Results</h2>
+        <p class="text-muted mb-2">During inference, real ultrasound frames are translated into the optimized representation before segmentation.</p>
+        <img src="../../assets/data/lotus/inference_results.png" class="img-fluid rounded shadow-sm mb-4" alt="LOTUS inference results">
+
+        <hr class="my-4">
+
+        <h2 class="h4" id="lotus-citation">Citation</h2>
+        <p class="mb-2">If you build on this work, please cite:</p>
+        <pre class="bg-light p-3 rounded border"><code>@inproceedings{velikova2023lotus,
+  title={LOTUS: Learning to Optimize Task-Based US Representations},
+  author={Yordanka Velikova and Mohammad Farid Azampour and Walter Simson and Vanessa Gonzalez Duque and Nassir Navab},
+  booktitle={Medical Image Computing and Computer Assisted Intervention (MICCAI)},
+  pages={435--445},
+  year={2023}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script defer src="../../assets/vendor/aos/aos.js"></script>
+  <script defer src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script defer src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script defer src="../../assets/vendor/typed.js/typed.min.js"></script>
+  <script defer src="../../assets/js/main.js"></script>
+</body>
+</html>

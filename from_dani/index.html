@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="Yordanka Velikova, Dani Velikova, 3D Computer Vision, Image Segmentation, Medical Robotics, Ultrasound, Medical Imaging, Technical University of Munich, TUM">
+    <meta name="description" content="Yordanka (Dani) Velikova's personal website - a researcher in image segmentation, robotic ultrasound, medical imaging and 3D Computer Vision problems.">
+    <meta name="google-site-verification" content="877DfLYUlaw2iQiVX3L5C9wBLY_Rbx9N5IrJHDSSUyw" />
+    
+    <title>Yordanka (Dani) Velikova</title>
+
+    <meta name="author" content="Dani Velikova">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Yordanka (Dani) Velikova
+                </p>
+                <p> I am a PhD researcher in the <a href="https://www.cs.cit.tum.de/camp/start/" target="camp">Computer-Aided Medical Procedures Lab (CAMP)</a> at the Technical University of Munich, under the supervision of <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/" target="navab"> Prof. Navab</a> where I work on ultrasound image segmentation and robotic ultrasound.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:dani.velikova@tum.de">Email</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?hl=en&user=-N2d-8QAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/danivelikova">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/danivelikova/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/DaniVelikova.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/profilepic3_circle.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  My research is primarily focused on unsupervised medical image segmentation in particular for ultrasound imaging as well as image-based robotic ultrasound navigation. 
+                  Beyond this, my interests branch into implicit neural representations, spectral embedding, shape completion, breathing compensation, and object tracking with transformers.                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+
+              <tr onmouseout="lotus_stop()" onmouseover="lotus_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='diff_us_image'><video  width=100% muted autoplay loop>
+                    <source src="images/diff-us-banner.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <!--img src='images/lotus_banner_img.jpg' width="160"-->
+                  </div>
+                  <!--script type="text/javascript">
+                    function lotus_start() {
+                      document.getElementById('lotus_image').style.opacity = "1";
+                    }
+
+                    function lotus_stop() {
+                      document.getElementById('lotus_image').style.opacity = "0";
+                    }
+                    lotus_stop()
+                  </script-->
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="http://danivelikova.github.io/diff-us/">
+                    <span class="papertitle">Diffusion as Sound Propagation: Physics-inspired Model for Ultrasound Image Generation</span>
+                  </a>
+                  <br>
+                  Marina Domínguez*,  
+                  <strong>Yordanka Velikova*</strong>,  
+                  <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>,  
+                  <a href="https://scholar.google.de/citations?user=MQcHEBsAAAAJ&hl=en">Mohammad Farid Azampour</a>
+                  <br>
+                  <em>MICCAI 2024 (Oral Presentation)</em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2407.05428v1">Arxiv</a> / <a href="https://github.com/marinadominguez/diffusion-for-us-images">Code</a>
+                  <p>
+                    A physics-inspired diffusion model for ultrasound image generation, simulating sound wave propagation for realistic ultrasound image synthesis.
+                  </p>
+                </td>
+              </tr>
+
+              
+              <tr onmouseout="spectralmethods_stop()" onmouseover="spectralmethods_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div id='spectralmethods_still'><img src="images/deep-spectral-banner.png" width="160"></div>
+                  <script type="text/javascript">
+                    function spectralmethods_start() {
+                      document.getElementById('spectralmethods_anim').style.display = 'inline';
+                      document.getElementById('spectralmethods_still').style.display = 'none';
+                    }
+              
+                    function spectralmethods_stop() {
+                      document.getElementById('spectralmethods_anim').style.display = 'none';
+                      document.getElementById('spectralmethods_still').style.display = 'inline';
+                    }
+                    spectralmethods_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="http://yourprojectlink.com/">
+                    <span class="papertitle">Deep Spectral Methods for Unsupervised Ultrasound Image Interpretation</span>
+                  </a>
+                  <br>
+                  Oleksandra Tmenova*,  
+                  <strong>Yordanka Velikova*</strong>,  
+                  <a href="https://mahdi-slh.github.io/">Mahdi Saleh</a>,
+                  <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>
+                  <br>
+                  <em>MICCAI 2024</em>
+                  <br>
+                  <a href="https://arxiv.org/pdf/2408.02043">Arxiv</a> / <a href="https://github.com/alexaatm/UnsupervisedSegmentor4Ultrasound">Code</a>
+                  <p>
+                    A novel deep spectral method for unsupervised interpretation of ultrasound images, advancing segmentation techniques through spectral clustering.
+                  </p>
+                </td>
+              </tr>
+              
+              <tr onmouseout="shapecompletion_stop()" onmouseover="shapecompletion_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div id='shapecompletion_still'><img src="images/shape-compl-us.png" width="160"></div>
+                  <script type="text/javascript">
+                    function shapecompletion_start() {
+                      document.getElementById('shapecompletion_anim').style.display = 'inline';
+                      document.getElementById('shapecompletion_still').style.display = 'none';
+                    }
+              
+                    function shapecompletion_stop() {
+                      document.getElementById('shapecompletion_anim').style.display = 'none';
+                      document.getElementById('shapecompletion_still').style.display = 'inline';
+                    }
+                    shapecompletion_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="http://danivelikova.github.io/shape-completion-us/">
+                    <span class="papertitle">Shape completion in the dark: completing vertebrae morphology from 3D ultrasound</span>
+                  </a>
+                  <br>
+                  Miruna-Alexandra Gafencu,
+                  <strong>Yordanka Velikova</strong>,  
+                  <a href="https://mahdi-slh.github.io/">Mahdi Saleh</a>,
+                  Tamas Ungi,
+                  <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>,  
+                  Thomas Wendler,
+                  <a href="https://scholar.google.de/citations?user=MQcHEBsAAAAJ&hl=en">Mohammad Farid Azampour</a>
+                  <br>
+                  <em>International Journal of Computer Assisted Radiology and Surgery (IJCARS), 2024</em>
+                  <br>
+                  <a href="https://arxiv.org/pdf/2404.07668">Arxiv</a> / <a href="https://github.com/miruna20/Shape-Completion-in-the-Dark">Code</a>
+                  <p>
+                    This project addresses the challenge of completing vertebrae morphology from 3D ultrasound imaging, using novel shape completion techniques even in low-visibility or incomplete datasets.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="breathingcomp_stop()" onmouseover="breathingcomp_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div id='breathingcomp_still'><img src="images/breath-comp-banner.png" width="160"></div>
+                  <script type="text/javascript">
+                    function breathingcomp_start() {
+                      document.getElementById('breathingcomp_anim').style.display = 'inline';
+                      document.getElementById('breathingcomp_still').style.display = 'none';
+                    }
+              
+                    function breathingcomp_stop() {
+                      document.getElementById('breathingcomp_anim').style.display = 'none';
+                      document.getElementById('breathingcomp_still').style.display = 'inline';
+                    }
+                    breathingcomp_stop()
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="http://danivelikova.github.io/INR-3DUS/">
+                    <span class="papertitle">Implicit Neural Representations for Breathing-compensated Volume Reconstruction in Robotic Ultrasound</span>
+                  </a>
+                  <br>
+                  <strong>Yordanka Velikova</strong>,  
+                  <a href="https://scholar.google.de/citations?user=MQcHEBsAAAAJ&hl=en">Mohammad Farid Azampour</a>,
+                  <a href="https://waltersimson.com/">Walter Simson</a>,  
+                  Marco Esposito,
+                  <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>
+                  <br>
+                  <em>2024 ICRA</em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2311.04999">Arxiv</a> / <a href="https://github.com/danivelikova/INR-3DUS">Code</a> 
+                  <p>
+                    This project focuses on using implicit neural representations to reconstruct 3D volumes from robotic ultrasound while compensating for respiratory motion during scanning.
+                  </p>
+                </td>
+              </tr>
+              
+              
+              <tr onmouseout="lotus_stop()" onmouseover="lotus_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='lotus_image'><video  width=100% muted autoplay loop>
+                    <source src="images/lotus_banner_img.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <!--img src='images/lotus_banner_img.jpg' width="160"-->
+                  </div>
+                  <!--script type="text/javascript">
+                    function lotus_start() {
+                      document.getElementById('lotus_image').style.opacity = "1";
+                    }
+
+                    function lotus_stop() {
+                      document.getElementById('lotus_image').style.opacity = "0";
+                    }
+                    lotus_stop()
+                  </script-->
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="http://danivelikova.github.io/lotus/">
+                    <span class="papertitle">LOTUS: Learning to Optimize Task-based US representations</span>
+                  </a>
+                  <br>
+                  <strong>Yordanka Velikova</strong>,
+                  <a href="https://scholar.google.de/citations?user=MQcHEBsAAAAJ&hl=en">Mohammad Farid Azampour</a>,
+                  <a href="https://waltersimson.com/">Walter Simson</a>,
+                  <a href="https://vgonzalezd.github.io/">Vanessa Gonzalez Duque</a>,
+                  <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>
+                  <br>
+                  <em>MICCAI 2023 (Oral Presentation)</em>
+                  <br>
+                  <a href="./lotus/">project page</a>
+                  /
+                  <a href="https://arxiv.org/abs/2307.16021">arXiv</a>
+                  <p></p>
+                  <p>
+                  Optimizing Ulrasound Intermediate Representations guided by the segmentation task. Trained end-to-end with domain adaptation network to account for the domain gap between real and simulated.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="cactuss_stop()" onmouseover="cactuss_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div id='cactuss_still'><img src="images/cactuss_banner_img.jpg"  width="160"></div>
+                  <script type="text/javascript">
+                    function cactuss_start() {
+                      document.getElementById('cactuss_anim').style.display = 'inline';
+                      document.getElementById('cactuss_still').style.display = 'none';
+                    }
+
+                    function cactuss_stop() {
+                      document.getElementById('cactuss_anim').style.display = 'none';
+                      document.getElementById('cactuss_still').style.display = 'inline';
+                    }
+                    cactuss_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="http://danivelikova.github.io/cactuss/">
+                    <span class="papertitle">CACTUSS: Common Anatomical CT-US Space for US examinations </span>
+                  </a>
+                  <br>
+                  <strong>Yordanka Velikova</strong>,  
+                  <a href="https://waltersimson.com/">Walter Simson</a>,
+                  Mehrdad Salehi,
+                  <a href="https://scholar.google.de/citations?user=MQcHEBsAAAAJ&hl=en">Mohammad Farid Azampour</a>,
+                  MD Philipp Paprottka,
+                  <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>
+                  <br>
+                  <em>MICCAI, 2022 (Oral Presentation)</em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2207.08619">Arxiv</a> / <a href="https://github.com/danivelikova/cactuss">Code</a> 
+                  <p>
+                    Common anatomical space between CT and US is an Intermediate Representation (IR) which acts as a virtual third modality. It inherits properties from both CT and Ultrasound and preserves the patient-specific anatomical layout.
+                    <br>
+                    <br>MICCAI Journal version: <a href="https://link.springer.com/chapter/10.1007/978-3-031-16437-8_47">version</a> / <a href="./data/bibtex_cactuss.txt">bibtex</a>
+                  </p>
+                </td>
+              </tr>      
+              
+            </tbody></table>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:0px">
+                  <br>
+                  <p style="text-align:right;font-size:small;">
+                    Template webpage from <a href="https://github.com/jonbarron/jonbarron_website">source code</a>.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
