@@ -6,12 +6,16 @@
 * License: https://bootstrapmade.com/license/
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #272829;
+  font-size: 17px;
+  line-height: 1.6;
 }
 
 a {
@@ -30,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -211,7 +215,7 @@ h6 {
   font-weight: 600;
   -moz-text-align-last: center;
   text-align-last: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 #header .profile h1 a,
@@ -282,7 +286,7 @@ h6 {
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.2s;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .nav-menu a i,
@@ -376,7 +380,7 @@ h6 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 #hero p span {
@@ -512,7 +516,7 @@ section {
 .facts .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 14px;
   color: #1C39BB;
 }
@@ -523,7 +527,7 @@ section {
   margin-top: 20px;
   color: #1C39BB;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   transition: ease-in-out 0.2s;
 }
 
@@ -547,7 +551,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #1C39BB;
 }
 
@@ -591,7 +595,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #1C39BB;
   margin-bottom: 10px;
 }
